@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAGASHOP by Mafer y Gabo. Catálogo de pines, pedidos y contacto.">
+
+    <title>MAGASHOP | by Mafer y Gabo</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="brand" aria-label="MAGASHOP by Mafer y Gabo">
+        <img src="imagenes/logo-magashop.jpeg"
+             alt="Logo de MAGASHOP"
+             class="brand-logo">
+
+        <div class="brand-text">
+            <div class="brand-main">MAGASHOP</div>
+            <div class="brand-sub">by Mafer y Gabo</div>
+        </div>
+    </div>
+
+    <nav class="nav" id="navMenu" aria-label="Navegación principal">
+        <a href="#" data-view="inicio" class="nav-link active">Inicio</a>
+        <a href="#" data-view="catalogo" class="nav-link">Catálogo</a>
+        <a href="#" data-view="politicas" class="nav-link">Políticas</a>
+        <a href="#" data-view="faq" class="nav-link">Preguntas</a>
+        <a href="#" data-view="contacto" class="nav-link">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-controls="navMenu"
+                aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <button class="cart-button" type="button" aria-label="Abrir carrito">
+            <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+            <span class="cart-label">Carrito</span>
+            <span class="cart-count">0</span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="view hero active" id="inicio" aria-labelledby="heroTitle">
+        <div class="hero-content">
+            <span class="hero-label">MAGASHOP · Pines y más</span>
+
+            <h1 id="heroTitle">
+                Pines que hablan
+                <span>por ti.</span>
+            </h1>
+
+            <p>
+                Encuentra diseños para darle un toque diferente a tus accesorios,
+                ropa, mochilas y más.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn btn-primary" type="button" data-view-target="catalogo">
+                    Explorar catálogo
+                </button>
+
+                <button class="btn btn-secondary" type="button" data-view-target="contacto">
+                    Contactar
+                </button>
+            </div>
+
+            <div class="hero-note">
+                Pedidos por WhatsApp · Pago por transferencia o efectivo
+            </div>
+        </div>
+
+        <div class="hero-products" aria-label="Algunos productos de MAGASHOP">
+            <figure class="hero-product hero-product-main">
+                <img src="imagenes/productos/hocus-pocus.jpeg"
+                     alt="Pin Hocus Pocus">
+            </figure>
+
+            <figure class="hero-product hero-product-small hero-product-one">
+                <img src="imagenes/productos/capibara-cafe.jpeg"
+                     alt="Pin Capibara">
+            </figure>
+
+            <figure class="hero-product hero-product-small hero-product-two">
+                <img src="imagenes/productos/arcoiris-pride.jpeg"
+                     alt="Pin Arcoíris">
+            </figure>
+        </div>
+    </section>
+
+    <section class="view catalog" id="catalogo" aria-labelledby="catalogTitle">
+        <div class="section-header">
+            <span class="section-label">Catálogo</span>
+            <h2 id="catalogTitle">Encuentra tu favorito</h2>
+            <p>Explora algunos de los diseños disponibles en MAGASHOP.</p>
+        </div>
+
+        <div class="products-grid">
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/productos/hocus-pocus.jpeg"
+                         alt="Pin Hocus Pocus"
+                         loading="lazy">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Pin</span>
+                    <h3>Hocus Pocus</h3>
+                    <p>Pin metálico ilustrado con tres personajes.</p>
+
+                    <div class="product-bottom">
+                        <span class="product-price">L. 100</span>
+                        <button class="add-cart"
+                                type="button"
+                                data-name="Hocus Pocus"
+                                data-price="100">
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/productos/capibara-cafe.jpeg"
+                         alt="Pin Capibara"
+                         loading="lazy">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Pin</span>
+                    <h3>Capibara</h3>
+                    <p>Pin rectangular con ilustración de capibara.</p>
+
+                    <div class="product-bottom">
+                        <span class="product-price">L. 100</span>
+                        <button class="add-cart"
+                                type="button"
+                                data-name="Capibara"
+                                data-price="100">
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/productos/corazon-pride.jpeg"
+                         alt="Pin Corazón multicolor"
+                         loading="lazy">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Pin</span>
+                    <h3>Corazón multicolor</h3>
+                    <p>Pin en forma de corazón con franjas de colores.</p>
+
+                    <div class="product-bottom">
+                        <span class="product-price">L. 100</span>
+                        <button class="add-cart"
+                                type="button"
+                                data-name="Corazón multicolor"
+                                data-price="100">
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/productos/arcoiris-pride.jpeg"
+                         alt="Pin Arcoíris"
+                         loading="lazy">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Pin</span>
+                    <h3>Arcoíris</h3>
+                    <p>Pin de arcoíris acompañado de un corazón.</p>
+
+                    <div class="product-bottom">
+                        <span class="product-price">L. 100</span>
+                        <button class="add-cart"
+                                type="button"
+                                data-name="Arcoíris"
+                                data-price="100">
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/productos/capibara-noche-estrellada.jpeg"
+                         alt="Pin Capibara noche estrellada"
+                         loading="lazy">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Pin</span>
+                    <h3>Capibara noche estrellada</h3>
+                    <p>Pin rectangular con capibara y fondo nocturno.</p>
+
+                    <div class="product-bottom">
+                        <span class="product-price">L. 100</span>
+                        <button class="add-cart"
+                                type="button"
+                                data-name="Capibara noche estrellada"
+                                data-price="100">
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="imagenes/productos/joker.jpeg"
+                         alt="Pin Joker"
+                         loading="lazy">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Pin</span>
+                    <h3>Joker</h3>
+                    <p>Pin inspirado en el personaje Joker.</p>
+
+                    <div class="product-bottom">
+                        <span class="product-price">L. 100</span>
+                        <button class="add-cart"
+                                type="button"
+                                data-name="Joker"
+                                data-price="100">
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="view" id="politicas" aria-labelledby="policiesTitle">
+        <div class="policies-page">
+            <div class="policies-intro">
+                <span class="section-label">Antes de comprar</span>
+
+                <h2 id="policiesTitle">
+                    Algunas cosas
+                    que debes saber.
+                </h2>
+
+                <p>
+                    Queremos que cada entrega sea sencilla para ambas partes.
+                    Estas son las reglas de compra y entrega de MAGASHOP.
+                </p>
+
+                <div class="policies-signature">
+                    MAGASHOP
+                    <span>by Mafer y Gabo</span>
+                </div>
+            </div>
+
+            <div class="policies-list">
+                <div class="policy-row">
+                    <span>01</span>
+                    <div>
+                        <h3>Compromiso de compra</h3>
+                        <p>Al realizar un pedido, recuerda cumplir con tu compromiso de compra.</p>
+                    </div>
+                </div>
+
+                <div class="policy-row">
+                    <span>02</span>
+                    <div>
+                        <h3>Entrega puntual</h3>
+                        <p>Te pedimos ser puntual. El tiempo máximo de espera es de 20 minutos.</p>
+                    </div>
+                </div>
+
+                <div class="policy-row">
+                    <span>03</span>
+                    <div>
+                        <h3>Cambios y devoluciones</h3>
+                        <p>No se aceptan cambios ni devoluciones.</p>
+                    </div>
+                </div>
+
+                <div class="policy-row">
+                    <span>04</span>
+                    <div>
+                        <h3>¿Necesitas cambio?</h3>
+                        <p>Si pagarás en efectivo, avísanos con anticipación cuánto cambio necesitas.</p>
+                    </div>
+                </div>
+
+                <div class="policy-row">
+                    <span>05</span>
+                    <div>
+                        <h3>Formas de pago</h3>
+                        <p>Puedes pagar mediante transferencia o efectivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="view" id="faq" aria-labelledby="faqTitle">
+        <div class="faq-page">
+            <div class="faq-heading">
+                <span class="section-label">Preguntas frecuentes</span>
+                <h2 id="faqTitle">¿Tienes dudas?</h2>
+                <p>
+                    Aquí encontrarás respuestas rápidas sobre pedidos,
+                    pagos y entregas en MAGASHOP.
+                </p>
+            </div>
+
+            <div class="faq-content">
+                <details class="faq-item">
+                    <summary>¿Cómo puedo realizar un pedido?</summary>
+                    <p>
+                        Agrega los productos que deseas al carrito y utiliza el botón
+                        "Comprar por WhatsApp" para enviar tu solicitud directamente a MAGASHOP.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué métodos de pago aceptan?</summary>
+                    <p>MAGASHOP acepta pagos mediante transferencia y efectivo.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Aceptan cambios o devoluciones?</summary>
+                    <p>No se aceptan cambios ni devoluciones.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Cuánto tiempo esperan durante una entrega?</summary>
+                    <p>El tiempo máximo de espera durante una entrega es de 20 minutos.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué hago si necesito cambio?</summary>
+                    <p>
+                        Si pagarás en efectivo, debes indicar con anticipación
+                        cuánto cambio necesitas.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Cómo puedo comunicarme con MAGASHOP?</summary>
+                    <p>Puedes comunicarte directamente mediante WhatsApp al número 8906-4535.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="view" id="contacto" aria-labelledby="contactTitle">
+        <div class="contact-page">
+            <div class="contact-info">
+                <span class="section-label">Contacto</span>
+                <h2 id="contactTitle">Hablemos.</h2>
+
+                <p class="contact-description">
+                    ¿Viste un pin que te gustó o tienes alguna duda?
+                    Puedes comunicarte directamente con MAGASHOP por nuestras redes sociales.
+                </p>
+
+                <div class="contact-links">
+                    <a href="https://wa.me/50489064535?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20MAGASHOP%20y%20quisiera%20consultar%20sobre%20sus%20productos."
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-link">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <span>WhatsApp</span>
+                            <strong>8906-4535</strong>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/maga_shophn/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-link">
+                        <i class="fa-brands fa-instagram"></i>
+                        <div>
+                            <span>Instagram</span>
+                            <strong>@maga_shophn</strong>
+                        </div>
+                    </a>
+
+                    <div class="contact-link contact-link-static">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <div>
+                            <span>Facebook</span>
+                            <strong>Maga Shophn</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-visual">
+                <img src="imagenes/redes-magashop.jpeg"
+                     alt="Redes sociales de MAGASHOP">
+                <p>Escanea el código para encontrar MAGASHOP en redes sociales.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- CARRITO -->
+<div class="cart-panel" id="cartPanel" aria-label="Carrito de compras">
+    <div class="cart-header">
+        <h2>Tu carrito</h2>
+        <button id="closeCart" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Tu carrito está vacío.</p>
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">L 0</strong>
+        </div>
+
+        <p class="checkout-info">
+            Tu pedido será enviado a MAGASHOP por WhatsApp para confirmar disponibilidad y entrega.
+        </p>
+
+        <button class="checkout-button" id="checkoutButton" type="button">
+            <i class="fa-brands fa-whatsapp"></i>
+            Comprar por WhatsApp
+        </button>
+    </div>
+</div>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<footer>
+    <p>MAGASHOP · by Mafer y Gabo</p>
+</footer>
+
+<a href="https://wa.me/50489064535?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20MAGASHOP%20y%20quisiera%20consultar%20sobre%20sus%20productos."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="whatsapp-floating"
+   aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- ASISTENTE MAGASHOP -->
+<button class="chatbot-toggle"
+        id="chatbotToggle"
+        type="button"
+        aria-label="Abrir asistente">
+    <i class="fa-solid fa-robot"></i>
+</button>
+
+<div class="chatbot-panel" id="chatbotPanel" aria-label="Asistente MAGASHOP">
+    <div class="chatbot-header">
+        <div>
+            <strong>Asistente MAGASHOP</strong>
+            <span>En línea</span>
+        </div>
+
+        <div class="chatbot-actions">
+            <button id="clearChat" type="button" title="Limpiar conversación" aria-label="Limpiar conversación">↻</button>
+            <button id="closeChatbot" type="button" title="Cerrar" aria-label="Cerrar asistente">×</button>
+        </div>
+    </div>
+
+    <div class="chatbot-messages" id="chatbotMessages">
+        <div class="bot-message">
+            ¡Hola! Soy el asistente de MAGASHOP. ¿En qué puedo ayudarte?
+        </div>
+    </div>
+
+    <div class="chatbot-suggestions">
+        <button type="button" data-question="¿Cómo realizo un pedido?">¿Cómo compro?</button>
+        <button type="button" data-question="¿Qué métodos de pago aceptan?">Formas de pago</button>
+        <button type="button" data-question="¿Aceptan devoluciones?">Devoluciones</button>
+        <button type="button" data-question="¿Cuánto esperan en una entrega?">Entregas</button>
+    </div>
+
+    <div class="typing-indicator" id="typingIndicator">Escribiendo...</div>
+
+    <div class="chatbot-input">
+        <input type="text"
+               id="chatInput"
+               placeholder="Escribe tu pregunta..."
+               autocomplete="off">
+
+        <button id="sendMessage" type="button">Enviar</button>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/orders.js"></script>
+<script src="js/chatbot.js"></script>
+
+</body>
+</html>
