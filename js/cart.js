@@ -215,7 +215,7 @@ checkoutButton.addEventListener("click", () => {
         "%0A%0AQuedo pendiente para confirmar disponibilidad y entrega.";
 
 
-    const whatsappNumber = "50489064535";
+    const whatsappNumber = "50489582627";
 
     const whatsappURL =
         `https://wa.me/${whatsappNumber}?text=${message}`;

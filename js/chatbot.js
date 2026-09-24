@@ -220,12 +220,12 @@ function getResponse(message) {
         text.includes("telefono")
     ) {
 
-        return "Puedes comunicarte con MAGASHOP por WhatsApp al 8906-4535.";
+        return "Puedes comunicarte con MAGASHOP por WhatsApp al 8958-2627.";
 
     }
 
 
-    return "No tengo información suficiente sobre esa consulta. Puedes comunicarte directamente con MAGASHOP por WhatsApp al 8906-4535.";
+    return "No tengo información suficiente sobre esa consulta. Puedes comunicarte directamente con MAGASHOP por WhatsApp al 8958-2627.";
 
 }
 
